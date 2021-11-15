@@ -3,18 +3,18 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 
-\titleformat{\section}
-{\huge\bfseries}
+\titleformat{\section}[frame]
+{\huge}
 {}
-{0em}
-{}[\titlerule]
+{0.25em}
+{\filcenter\bfseries}
 
 
 \titleformat{\subsection}
 {\bfseries\Large}
-{$\bullet$}
+{\hspace{-0.25in}$\bullet$}
 {0em}
 {}
 
@@ -23,6 +23,9 @@
 {}
 {0em}
 {}[---]
+
+\titlespacing{\subsubsection}
+{0em}{0.25em}{1em}
 
 \renewcommand{\maketitle}{
 \begin{center}
